@@ -1,25 +1,40 @@
 *
 {
   font-family: 'open sans';
+  margin: 0;
 }
-/* --------- Header -------- */
+img
+{
+  height: 100%;
+  width: 100%;
+}
+/* ------------ Header ----------- */
 
 /* Logo Airbnb */
-header img
+header figure img
 {
   height: 34px;
   width: 34px;
+}
+
+header figure
+{
+  display: flex;
+  margin-top: 3%;
+  margin-left: 3%;
 }
 
 .fa fa-angle-down
 {
   margin-top: 1px;
 }
+
 /* Titre "reservez des maintenant ...."*/
 h1
 {
   font-weight: lighter;
   color: grey;
+  margin: 5% auto auto 5%;
 }
 /* Titre Airbnb */
 span
@@ -28,56 +43,84 @@ span
   font-weight: bold;
 }
 
-/*barre de recherche*/
-/*a {
-  border: 1px solid lightgrey;
-  width: 250px;
-  height: 40px;
-  background:white;
-  box-shadow: 0px 0px .5px 0px;
-  text-align: left;
-  font-size: 15px;
-  padding: ;
-  color: lightgrey;
-}
-*/
-/*
-ul {
-  display: flex;
-  list-style-type: none;
-  margin-right: 15px;
-}
-li
-{
-width: 80px;
-margin: 0 10px;
-display: flex;
-flex: 1;
-}
-*/
-
+/* Barre de recherche */
 .container
 {
   position: relative;
   padding: 12px;
+  padding: 20px;
   border: 1px solid #dce0e0;
   border-radius: 4px;
   box-shadow: 0 1px 3px 0 #dce0e0;
+  margin: 6% 2% 2% 5%;
 }
+
+/* "rechercher" dans le bouton recherche */
 
 .container a
 {
   display: block;
   width: 100%;
   vertical-align: middle;
-  color: lightgrey;
+  color: grey;
+  font-weight: 600;
   text-decoration: none;
 }
 
+/* Loupe dans le bouton recherche */
 .container i
 {
   display: block;
   position: absolute;
-  right: 16px;
-  top: 15px;
+  right: 20px;
+  top: 20px;
+}
+
+/* Titre "nouveautés à Harlem"*/
+h3
+{
+  color: grey;
+  margin-left: 8%;
+  margin-top: 7%;
+}
+
+/* Section avec photos */
+.nouveaute, .reservez
+{
+  margin: 4% 12% auto 8%;
+}
+
+.nouveaute img, .reservez img
+{
+  width: 200px;
+  height: 300px;
+}
+
+.nouveaute, .reservez
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.column p span
+{
+    font-weight: 600;
+    color: black;
+}
+/* Explication des images */
+p
+{
+  text-align: left;
+}
+
+/* Etoiles + commentaires */
+.stars i
+{
+  color: green;
+  padding: 3px;
+}
+.comment
+{
+  font-size: 12px;
+  color: grey;
 }
