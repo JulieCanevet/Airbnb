@@ -11,6 +11,14 @@ img
 /* ------------ Header ----------- */
 
 /* Logo Airbnb */
+
+/* alignement du logo et du menu */
+.emplacement
+{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+}
 header figure img
 {
   height: 34px;
@@ -29,6 +37,22 @@ header figure
   margin-top: 1px;
 }
 
+/* Reglage du menu en haut à droite */
+ul
+{
+  display: flex;
+  flex-direction: row-reverse;
+  list-style-type: none;
+}
+
+ul li a
+{
+  color: grey;
+  text-decoration: none;
+  padding: 1em;
+  font-weight: 600;
+}
+
 /* Titre "reservez des maintenant ...."*/
 h1
 {
@@ -36,6 +60,7 @@ h1
   color: grey;
   margin: 5% auto auto 5%;
 }
+
 /* Titre Airbnb */
 span
 {
@@ -92,7 +117,8 @@ form
   {
     display: flex;
     justify-content: center;
-    margin: 3% 7% 3% 7%;
+    margin-top: 7%;
+    width: 100%;
   }
   input
   {
@@ -123,13 +149,20 @@ form
     background-color: none;
     border: none;
   }
+
+  ul li a
+  {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
 }
 /* ---------------- FIN DU HEADER ------------ */
 /* Titre "nouveautés à Harlem"*/
 h3
 {
   color: grey;
-  margin: 7% auto 5% 8%;
+  margin: 10% auto 5% 8%;
 }
 
 
@@ -166,7 +199,7 @@ p
 }
 
 /* Passage sur tablette */
-@media (min-width: 745px) {
+@media (min-width: 800px) {
 
   .tablette
   {
