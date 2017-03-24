@@ -80,8 +80,7 @@ span
 h3
 {
   color: grey;
-  margin-left: 8%;
-  margin-top: 7%;
+  margin: 7% auto 5% 8%;
 }
 
 /* Section avec photos */
@@ -131,10 +130,53 @@ p
 {
   color: lightgrey;
 }
-
+ /* Images de la section logemets*/
 .logements img
 {
   width: 250px;
   height: 150px;
   padding-right: 1em;
+}
+
+/* Images de la section destinations */
+.destinations img
+{
+  width: 130px;
+  height: 200px;
+  padding-right: 1em;
+}
+
+.destinations
+{
+  display: flex;
+  justify-content: center;
+}
+
+.arrivee img
+{
+  width: 350px;
+  height: 200px;
+  margin: 10% 12% auto 8%;
+}
+
+.arrivee h2, .button
+{
+  margin: 1% 12% auto 8%;
+}
+
+.arrivee p
+{
+  margin: .5% 12% 2em 8%;
+}
+
+.button
+{
+  border: 1px solid #008489;
+  border-radius: 4%;
+  background-color: #008489;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px 8px 16px;
+  font-weight: 700;
+  font-size: 15px;
 }
