@@ -75,7 +75,56 @@ span
   right: 20px;
   top: 20px;
 }
+form
+{
+  display: none;
+}
 
+/* En cas de passage sur écran d'ordinateur */
+@media (min-width: 800px){
+
+  .container
+  {
+    display: none;
+  }
+
+  form
+  {
+    display: flex;
+    justify-content: center;
+    margin: 3% 7% 3% 7%;
+  }
+  input
+  {
+    border: none;
+  }
+
+  label
+  {
+    display: block;
+  }
+
+  .fa-long-arrow-right
+  {
+    color: grey;
+  }
+
+  .ou, .quand, .voyageurs
+  {
+    border: 1px solid lightgrey;
+    padding: 8px 10% 8px 10px;
+    text-align: left;
+    border: 1px solid #dce0e0;
+    box-shadow: 0 1px 3px 0 #dce0e0;
+  }
+
+  button
+  {
+    background-color: none;
+    border: none;
+  }
+}
+/* ---------------- FIN DU HEADER ------------ */
 /* Titre "nouveautés à Harlem"*/
 h3
 {
@@ -83,23 +132,26 @@ h3
   margin: 7% auto 5% 8%;
 }
 
+
+.tablette, .desktop
+{
+  display: none;
+}
+
 /* Section avec photos */
 .nouveaute, .reservez, .experiences, .logements
 {
-  margin: 4% 12% auto 8%;
+  margin: 4% auto auto 8%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nouveaute img, .reservez img, .experiences img
 {
-  width: 200px;
-  height: 300px;
-  padding-right: 1em;
-}
-
-.nouveaute, .reservez, .experiences, .logements
-{
-  display: flex;
-  justify-content: space-between;
+  width: 95%;
+  height: 95%;
+  align-content: space-between;
+  margin-left: .5em;
 }
 
 .column p span
@@ -112,6 +164,31 @@ p
 {
   text-align: left;
 }
+
+/* Passage sur tablette */
+@media (min-width: 745px) {
+
+  .tablette
+  {
+      display: flex;
+  }
+
+  .desktop
+  {
+    display: none;
+  }
+}
+
+/* Passage sur ordinateur */
+@media (min-width: 1200px) {
+
+  .tablette, .desktop
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/* Fin de passage sur tablette */
 
 /* Etoiles + commentaires */
 .stars i
