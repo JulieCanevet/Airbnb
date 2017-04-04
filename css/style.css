@@ -64,7 +64,7 @@ h1
 /* Titre Airbnb */
 span
 {
-  color: red;
+  color: #FC3E3A;
   font-weight: bold;
 }
 
@@ -153,11 +153,12 @@ form
   {
     display: flex;
     float: right;
-    background-color: indianred;
+    background-color: #FC3E3A;
     border-radius: 4px;
-    margin-left: 4em;
+    margin-left: 7em;
     margin-right: 0;
     padding: 1em;
+    color: white
   }
   ul li a
   {
